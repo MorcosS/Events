@@ -45,6 +45,7 @@ export default class Comments extends Component {
         }
     }
 
+    // function for posting our comment
     async onPostComment() {
         // save my Comment in a variable
         myComment = { text: myComment.text, date: new Date() }
