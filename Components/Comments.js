@@ -14,7 +14,7 @@ import {
     Dimensions,
     Button,
     FlatList,
-    AsyncStorage
+    AsyncStorage,
 } from 'react-native';
 import Colors from 'HSColors'
 var CommentsList = []  //our List of Comments
@@ -71,6 +71,7 @@ export default class Comments extends Component {
                 {
                     //the list that carries our comments
                 }
+                
                 <FlatList
                     data={CommentsList}
                     renderItem={({ item }) => 

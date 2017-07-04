@@ -9,7 +9,9 @@ import {
     AppRegistry,
     StyleSheet,
     Text,
-    View
+    View,
+    Image,
+    Dimensions
 } from 'react-native';
 import { TabNavigator } from 'react-navigation' // Tab Navigator used for switching between apps.
 import Comments from './Components/Comments'  //importing comments screen.
@@ -41,7 +43,12 @@ const MainMenu = TabNavigator({
 export default class App extends Component {
     render() {
         return (
+            <View style={{flex:1}} >
+            <View style={{ height: 200 }} >
+                <Image style={{width:Dimensions.get('window').width,height:200}} source={require('./images/react-native.png')} />
+            </View>
             <MainMenu />
+            </View>
         );
     }
 }
