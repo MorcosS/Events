@@ -44,6 +44,10 @@ export default class App extends Component {
     render() {
         return (
             <View style={{flex:1}} >
+                {
+                    // image is used before the tabs can e customised by adding image to images folder and update the 
+                    // source props in Image component
+                }
             <View style={{ height: 200 }} >
                 <Image style={{width:Dimensions.get('window').width,height:200}} source={require('./images/react-native.png')} />
             </View>
